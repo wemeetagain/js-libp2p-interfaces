@@ -30,7 +30,8 @@ module.exports = (common) => {
     }
   }
 
-  describe('listen', () => {
+  describe('listen', function () {
+    this.timeout(20 * 1000)
     let addrs
     let transport
 
